@@ -1,3 +1,3 @@
 # LNSCountdownView
 
-A description of this package.
+A SwiftUI countdown and countdown progress view.
