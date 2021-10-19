@@ -212,7 +212,7 @@ public struct LNSCountdownTimerView: View {
                             )
                     )
                     .animation(
-                        .easeInOut(duration: 1), value: progress
+                        .easeInOut(duration: 0.5), value: progress
                     )
             }
             .padding(lineWidth / 2)
@@ -234,7 +234,7 @@ public struct LNSCountdownTimerView: View {
 
 
 public struct LNSCountdownPausableTimerView: View {
-    private let timer = Timer.publish(every: 1 / 10, on: .main, in: .common).autoconnect()
+    private let timer = Timer.publish(every: 1 / 20, on: .main, in: .common).autoconnect()
 
     private let title: String
     private let duration: TimeInterval
